@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=library_add"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Library</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-title">
+        <h1>Library</h1>
+      </div>
+      <div class="header-button">
+        <button type="button" id="add-btn">
+          <span class="material-symbols-outlined" id="add-btn">
+            library_add
+          </span>
+          <h1>Add</h1>
+        </button>
+      </div>
+    </header>
+    <form id="new-book-form" style="display: none">
+      <label for="title">title:</label>
+      <input type="text" id="title" />
+      <label for="author">author:</label>
+      <input type="text" id="author" />
+      <label for="pages">pages:</label>
+      <input type="text" id="pages" />
+      <label for="read">read:</label>
+      <input type="checkbox" id="read" />
+      <input type="submit" value="Add Book" />
+    </form>
+    <div class="library" id="library"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
