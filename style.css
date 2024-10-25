@@ -120,3 +120,8 @@ header {
   align-items: center;
   gap: 1rem;
 }
+
+input:invalid {
+  border: 2px solid pink;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
